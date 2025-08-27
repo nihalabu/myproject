@@ -1,0 +1,226 @@
+.testimonials{
+    margin: 85px 10% 50px;
+    
+    padding: 0 50px;
+}
+
+.nextbtn,.backbtn{
+    
+   margin-top: 35px;
+    background: #212ea0;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 15px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(33, 46, 160, 0.3);
+    z-index: 10;
+}
+
+.nextbtn:hover,.backbtn:hover{
+    background: #1a237e;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(33, 46, 160, 0.4);
+}
+.nextback{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+
+}
+
+.slider{
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slider ul{
+    display: flex;
+    overflow-x: hidden;
+    width: 200%;
+    transition: transform 0.6s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+
+.slider ul li{
+    list-style: none;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.slide{
+    background: #fff;
+    color: #676767;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    position: relative;
+    transition: all 0.3s ease;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.userinfo{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.userinfo img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 3px solid #212ea0;
+    transition: transform 0.3s ease;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text h3{
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text span{
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.slide p{
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Mobile and tablet responsive styles */
+@media (max-width: 768px) {
+    .testimonials {
+        margin: 50px 5% 50px;
+        padding: 0 20px;
+    }
+    
+    /* Show only one testimonial at a time on mobile */
+    .slider ul {
+        width: 400%; /* 4 testimonials * 100% each */
+    }
+    
+    .slider ul li {
+        width: 25%; /* Each testimonial takes full width when shown */
+        padding: 0 10px;
+    }
+    
+    .slide {
+        padding: 30px 20px;
+        min-height: 200px;
+    }
+    
+    /* Adjust button positions for mobile */
+    /* .nextbtn, .backbtn {
+        width: 40px;
+        padding: 12px;
+        top: 110%;
+    } */
+/*     
+    .nextbtn {
+        right: 42%;
+    }
+    
+    .backbtn {
+        left: 42%;
+    } */
+    
+    .userinfo img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .text h3 {
+        font-size: 16px;
+    }
+    
+    .text span {
+        font-size: 12px;
+    }
+    
+    .slide p {
+        font-size: 14px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .testimonials {
+        margin: 40px 2% 40px;
+        padding: 0 10px;
+    }
+    
+    .slide {
+        padding: 25px 15px;
+        min-height: 180px;
+    }
+    
+    /* .nextbtn, .backbtn {
+        width: 35px;
+        padding: 10px;
+    }
+    
+    .nextbtn {
+        right: 45%;
+    }
+    
+    .backbtn {
+        left: 45%;
+    } */
+    
+    .userinfo {
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .userinfo img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .text h3 {
+        font-size: 15px;
+    }
+    
+    .slide p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+/* Large tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .testimonials {
+        margin: 70px 8% 50px;
+        padding: 0 30px;
+    }
+    
+    .slide {
+        padding: 35px 25px;
+    }
+}
