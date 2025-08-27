@@ -12,10 +12,8 @@ nav{
     top: 0;
     z-index: 10;
     color: #FFF;
-    margin-top: 10px;
-    
-
-}
+    padding-top: 8px;
+  }
 nav a{
     display: inline-block;
     
